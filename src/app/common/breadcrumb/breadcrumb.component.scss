@@ -1,0 +1,20 @@
+.breadcrumb {
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0 8px;
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        .mat-icon {
+            width: 14px;
+            height: 14px;
+            font-size: 14px;
+            margin: 0 8px;
+        }
+    }
+}

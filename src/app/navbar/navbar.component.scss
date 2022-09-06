@@ -1,0 +1,13 @@
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+    .mat-flat-button + .mat-flat-button {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,6 @@
+<ul class="breadcrumb">
+    <li *ngFor="let breadcrumb of breadcrumbs; first as isFirst">
+        <mat-icon *ngIf="!isFirst" aria-hidden="false">arrow_forward_ios</mat-icon>
+        <a>{{ breadcrumb.label }}</a>
+    </li>
+</ul>

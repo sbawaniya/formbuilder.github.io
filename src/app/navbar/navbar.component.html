@@ -1,0 +1,12 @@
+<mat-toolbar>
+    <app-breadcrumb></app-breadcrumb>
+    <span class="spacer"></span>
+    <button mat-flat-button color="primary" (click)="openDialog('Folder')">
+        <mat-icon aria-hidden="false">folder</mat-icon>
+        Add Folder
+    </button>
+    <button mat-flat-button color="accent" (click)="openDialog('File')">
+        <mat-icon aria-hidden="false">source</mat-icon>
+        Add Content Item
+    </button>
+</mat-toolbar>

@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Add {{data.name}}</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="outline" [style.width.%]="100">
+        <mat-label>Add {{data.name}}</mat-label>
+        <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <span class="spacer"></span>
+    <button mat-button [mat-dialog-close]="data" [disabled]="!data.name">Ok</button>
+</div>
