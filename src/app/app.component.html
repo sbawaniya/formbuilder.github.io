@@ -1,19 +1,8 @@
 <div class="main-container">
-  <div class="controls-container" cdkDropList [cdkDropListData]="items">
-    <div class="control" *ngFor="let control of items" cdkDrag>{{control.name}}</div>
+  <div class="side-nav">
+    <app-sidenav></app-sidenav>
   </div>
-<input [(ngModel)]="test" #search>
-
-  <div class="view-container"  (cdkDropListDropped)="drop($event)" >
-    <label cdkDrag cdkDragBoundary=".view-container">Test documents</label>
-    <ng-container class="control" *ngFor="let control of dropItems"> -->
-      <ng-container *ngTemplateOutlet="ref" ></ng-container>
-    </ng-container>
-    <ng-template  host #ref></ng-template>
-    <div class="example-boundary">
-      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>
-        I can only be dragged within the dotted container
-      </div>
-    </div>
+  <div class="main-view">
+    <router-outlet></router-outlet>
   </div>
 </div>

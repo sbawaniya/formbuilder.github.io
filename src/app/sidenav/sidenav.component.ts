@@ -10,7 +10,7 @@ export class SidenavComponent implements OnInit {
 
   searchText: string = '';
 
-  constructor(private sharedService: SharedService) { }
+  constructor() { }
 
   ngOnInit() {
   }
